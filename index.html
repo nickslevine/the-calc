@@ -155,7 +155,26 @@
     function btninput(val) {
         document.getElementById('expression').value += val;
     }
-   
+     let sqrt = (n) => Math.sqrt(n);
+
+    let pi = Math.PI;
+
+    let sum = (...nums) => [...nums].reduce((acc, val) => (acc + val));
+
+    let mean = (...nums) => [...nums].reduce((p, e) => {
+        return p + e;
+    }) / nums.length;
+
+    let c = (n) => ((n - 32) * 5 / 9);
+
+    let f = (n) => (n * (9 / 5) + 32);
+
+    let roots = (a,b,c) => {
+        let arr = [];
+        arr.push(((-1*b + (sqrt(b*b - 4*a*c)))/2*a));
+        arr.push(((-1*b - (sqrt(b*b - 4*a*c)))/2*a));
+        return arr;
+    }  
     </script>
     
 </head>
